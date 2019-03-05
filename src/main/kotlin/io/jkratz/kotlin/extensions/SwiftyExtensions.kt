@@ -9,8 +9,3 @@ package io.jkratz.kotlin.extensions
 inline fun<T> T?.guard(block: () -> Nothing): T {
     return this ?: block()
 }
-
-fun<T> T?.unwrap(): T {
-    //if (this == null) throw kotlin.IllegalStateException()
-    return this!!
-}
